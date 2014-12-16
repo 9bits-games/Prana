@@ -7,6 +7,8 @@ public class CollectablesManager : MonoBehaviour {
 	private CollectableController[] collectables;
 	private List<CollectableController> collected;
 
+    public int ItemsCollected { get { return collected.Count; } }
+
 	// Use this for initialization
 	void Start () {
 		collectables = gameObject.GetComponentsInChildren<CollectableController>();
