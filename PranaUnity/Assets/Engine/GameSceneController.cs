@@ -3,18 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class GameSceneController: SceneController {
-	CollectablesManager collectableManager;
+	protected CollectablesManager CollectableManager;
+	protected GoalAreaController GoalArea;
 
-	// Use this for initialization
-	void Start () {
-		collectableManager = GetComponentInChildren<CollectablesManager>();
-
+	protected new void Start () {
+		CollectableManager = GetComponentInChildren<CollectablesManager>();
+		GoalArea = GetComponentInChildren<GoalAreaController>();
+		GoalArea.OnReached += GoalAreaReached;
 	}
 
-	void FinishScene() {
+	protected virtual void GoalAreaReached(GameObject goalArea) {
+		FinishScene();
+	}
+
+	protected virtual void FinishScene() {
+		Debug.Log("Finishing Scene");
 		Application.LoadLevel(LevelSelectSceneID);
 	}
 
-	// Update is called once per frame
 	void Update () {}
 }
