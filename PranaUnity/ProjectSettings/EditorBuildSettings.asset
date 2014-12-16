@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/GameScenes/02-LevelSelect/LevelSelect.unity
+  - enabled: 1
+    path: Assets/GameScenes/10-Spring/Spring.unity

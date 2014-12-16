@@ -6,6 +6,8 @@ using System.Collections;
  **/
 public class SceneController : BaseMonoBehaviour {
 
+	protected string LevelSelectSceneID = "LevelSelect";
+
 	// Use this for initialization
 	void Start () {}
 
