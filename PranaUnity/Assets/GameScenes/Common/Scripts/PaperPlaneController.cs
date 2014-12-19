@@ -7,10 +7,11 @@ public class PaperPlaneController : BaseMonoBehaviour {
 	public float baseUpwardForce = 0.095f;
 	public float speedUpwardForce = 0.0029f;
 	public float maxSpeed = 3f;
+    public float UpVectorRotationSpeed = 1f;
 
 	// Use this for initialization
 	void Start () {
-		rigidbody.AddRelativeForce(Vector3.forward * 1f);
+		//rigidbody.AddRelativeForce(Vector3.forward * 1f);
 	}
 
 	void Update() {
@@ -44,7 +45,9 @@ public class PaperPlaneController : BaseMonoBehaviour {
 			Vector3 forward = transform.forward;
 			Vector3 heading = forward + (spdDir - forward) * 0.08f;
 
-			transform.LookAt(heading + transform.position, Vector3.up);
+            Vector3 up = Vector3.RotateTowards(transform.up, Vector3.up, UpVectorRotationSpeed * Time.deltaTime, 0f);
+
+            transform.LookAt(heading + transform.position, up);
 		}
 		
 		rigidbody.velocity = Vector3.ClampMagnitude(rigidbody.velocity, maxSpeed);

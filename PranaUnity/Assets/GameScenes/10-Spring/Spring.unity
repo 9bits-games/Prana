@@ -2431,7 +2431,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 717695448}
   m_LocalRotation: {x: 0, y: .0438918211, z: 0, w: .999036312}
-  m_LocalPosition: {x: 10.3999996, y: 10.6999998, z: -29.7999992}
+  m_LocalPosition: {x: 10.3999996, y: 5.03999996, z: -35.8400002}
   m_LocalScale: {x: .99999994, y: 1, z: .99999994}
   m_Children: []
   m_Father: {fileID: 473584988}
@@ -4220,7 +4220,7 @@ Transform:
   m_PrefabParentObject: {fileID: 419114, guid: e22659331326146caaaf6efaafb1a0d9, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1630616925}
-  m_LocalRotation: {x: 0, y: -.13751477, z: 0, w: .990499735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.69999981, y: 9.69999981, z: -28.1000004}
   m_LocalScale: {x: .289999992, y: .289999992, z: .289999992}
   m_Children:
@@ -4242,6 +4242,7 @@ MonoBehaviour:
   baseUpwardForce: .0949999988
   speedUpwardForce: .00289999996
   maxSpeed: 3
+  UpVectorRotationSpeed: 1
 --- !u!65 &1630616929
 BoxCollider:
   m_ObjectHideFlags: 0
