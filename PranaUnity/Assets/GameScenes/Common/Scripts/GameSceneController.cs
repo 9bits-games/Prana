@@ -28,7 +28,6 @@ public abstract class GameSceneController: SceneController {
     }
 	
 	protected virtual void FinishScene() {
-		Debug.Log("Finishing Scene");
 		Application.LoadLevel(LevelSelectSceneID);
 	}
 

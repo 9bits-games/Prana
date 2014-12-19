@@ -11,6 +11,10 @@ public class Wind : MonoBehaviour {
 	public float HorizontalDisplacementToForce = 0.1f;
 	public bool spawnWindBlow = false; 
 
+    public void ApplyWind(Vector3 windForce) {
+        linealWindStrenght += windForce;
+    }
+
 
 	private Vector3 linealWindStrenght;
 	private bool draggingL;
@@ -97,21 +101,21 @@ public class Wind : MonoBehaviour {
 	}
 
 
-	void computeAndApplyPlanarWind(Vector3 lPos, Vector3 gDir, float scale) {
+    void computeAndApplyPlanarWind(Vector3 lPos, Vector3 gDir, float scale) {
 		Vector3 force = gDir * scale * HorizontalDisplacementToForce;
 		linealWindStrenght += force;
 
-		Vector3 gPost = player.transform.position + lPos;
-		Debug.DrawLine(gPost, gPost + gDir * scale, Color.blue);
-		SpawnWindBlow(gPost, gDir * (1f + scale / 2f) + player.rigidbody.velocity * 0.7f);
+        Vector3 gPost = player.transform.position + lPos;
+        Debug.DrawLine(gPost, gPost + gDir * scale, Color.blue);
+        SpawnWindBlow(gPost, gDir * (1f + scale / 2f) + player.rigidbody.velocity * 0.7f);
 	}
 
 	void sendVerticalWind(Vector3 lPos, float displacement) {
 		Vector3 force = Vector3.up * displacement * VerticalDisplacementToForce;
 		linealWindStrenght += force;
 
-		Vector3 gPost = player.transform.position + lPos;
-		SpawnWindBlow(gPost, Vector3.up * (1f + displacement / 2f) + player.rigidbody.velocity * 0.7f);
+        Vector3 gPost = player.transform.position + lPos;
+        SpawnWindBlow(gPost, Vector3.up * (1f + displacement / 2f) + player.rigidbody.velocity * 0.7f);
 	}
 
 	void SpawnWindBlow(Vector3 pos, Vector3 vel) {

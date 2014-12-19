@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class CollectablesManager : MonoBehaviour {
+public class CollectablesManager : BaseMonoBehaviour {
 
 	private CollectableController[] collectables;
 	private List<CollectableController> collected;
