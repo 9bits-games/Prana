@@ -1,16 +1,16 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &130042
+--- !u!1 &145018
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 430042}
-  - 193: {fileID: 19330042}
-  - 33: {fileID: 3330042}
-  - 23: {fileID: 2330042}
+  - 4: {fileID: 445018}
+  - 193: {fileID: 19345018}
+  - 33: {fileID: 3345018}
+  - 23: {fileID: 2345018}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -18,71 +18,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &430042
+--- !u!4 &445018
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130042}
+  m_GameObject: {fileID: 145018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!21 &2130042
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Optimized Bark Material
-  m_Shader: {fileID: 10604, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: b4b38d7a105754b94a011a00f7ab4fff, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BumpSpecMap
-        second:
-          m_Texture: {fileID: 2800000, guid: 59d1eee9daac74206ade6228a3add49a, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _TranslucencyMap
-        second:
-          m_Texture: {fileID: 2800000, guid: cc8ee51de4ca547b0bd4e6e14db175ed, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _SquashAmount
-        second: 1
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _Scale
-        second: {r: 1, g: 1, b: 1, a: 1}
---- !u!21 &2130044
+--- !u!21 &2145016
 Material:
   serializedVersion: 3
   m_ObjectHideFlags: 10
@@ -99,28 +47,28 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: b4b38d7a105754b94a011a00f7ab4fff, type: 3}
+          m_Texture: {fileID: 2800000, guid: c185dff8f4bd44678be4b012fd9504d8, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpSpecMap
         second:
-          m_Texture: {fileID: 2800000, guid: 59d1eee9daac74206ade6228a3add49a, type: 3}
+          m_Texture: {fileID: 2800000, guid: 2a68ba157d137441b8bdad241bc2cf8c, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _TranslucencyMap
         second:
-          m_Texture: {fileID: 2800000, guid: cc8ee51de4ca547b0bd4e6e14db175ed, type: 3}
+          m_Texture: {fileID: 2800000, guid: 3ee30f9e42d344acaa567102b2a8d416, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _ShadowTex
         second:
-          m_Texture: {fileID: 2800000, guid: 6aacb54f4e26a4d1d9da86be17715de8, type: 3}
+          m_Texture: {fileID: 2800000, guid: 27f29a4662c7b4647b0fa785207a2c81, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -157,19 +105,71 @@ Material:
         first:
           name: _TranslucencyColor
         second: {r: .730000019, g: .850000024, b: .409999996, a: 1}
---- !u!23 &2330042
+--- !u!21 &2145018
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 10
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Optimized Bark Material
+  m_Shader: {fileID: 10604, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c185dff8f4bd44678be4b012fd9504d8, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpSpecMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 2a68ba157d137441b8bdad241bc2cf8c, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TranslucencyMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 3ee30f9e42d344acaa567102b2a8d416, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SquashAmount
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .5, g: .5, b: .5, a: 1}
+      data:
+        first:
+          name: _Scale
+        second: {r: 1, g: 1, b: 1, a: 1}
+--- !u!23 &2345018
 Renderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130042}
+  m_GameObject: {fileID: 145018}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2130042}
+  - {fileID: 2145018}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -177,14 +177,14 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3330042
+--- !u!33 &3345018
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130042}
-  m_Mesh: {fileID: 4330042}
---- !u!43 &4330042
+  m_GameObject: {fileID: 145018}
+  m_Mesh: {fileID: 4345018}
+--- !u!43 &4345018
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -327,7 +327,7 @@ Mesh:
     m_Extent: {x: .576320767, y: 7.37129211, z: .986577928}
   m_MeshUsageFlags: 0
   m_MeshOptimized: 0
---- !u!114 &11430042
+--- !u!114 &11445018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -757,17 +757,17 @@ MonoBehaviour:
     parentID: 2
     groupID: 3
     _uniqueID: 4
-  mesh: {fileID: 4330042}
-  optimizedSolidMaterial: {fileID: 2130042}
-  optimizedCutoutMaterial: {fileID: 2130044}
+  mesh: {fileID: 4345018}
+  optimizedSolidMaterial: {fileID: 2145018}
+  optimizedCutoutMaterial: {fileID: 2145016}
   isInPreviewMode: 0
---- !u!193 &19330042
+--- !u!193 &19345018
 Tree:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130042}
-  m_TreeData: {fileID: 11430042}
+  m_GameObject: {fileID: 145018}
+  m_TreeData: {fileID: 11445018}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -777,6 +777,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 130042}
+  m_RootGameObject: {fileID: 145018}
   m_IsPrefabParent: 1
   m_IsExploded: 1
