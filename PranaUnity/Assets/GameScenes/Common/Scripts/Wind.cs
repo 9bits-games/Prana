@@ -2,7 +2,7 @@
 using System;
 using System.Collections;
 
-public class Wind : MonoBehaviour {
+public class Wind : BaseMonoBehaviour {
 	public GameObject windBlow;
 	public Transform player;
 	public float linealWindWeakening = 3f;
