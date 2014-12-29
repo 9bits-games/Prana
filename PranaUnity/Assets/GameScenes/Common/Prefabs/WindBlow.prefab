@@ -10,8 +10,6 @@ GameObject:
   - 4: {fileID: 426996}
   - 54: {fileID: 5426996}
   - 114: {fileID: 11417326}
-  - 75: {fileID: 7526996}
-  - 135: {fileID: 13526996}
   m_Layer: 0
   m_Name: WindBlow
   m_TagString: Untagged
@@ -27,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 126996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,17 +44,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &7526996
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126996}
-  m_Enabled: 1
-  m_Force: {x: 1, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &11417326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,21 +56,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WindMark: {fileID: 442518, guid: d15a36d57424242d198345dc189d2f07, type: 2}
-  Radius: 5
+  Radius: 2
   MarkCount: 5
   LifeTime: 2
---- !u!135 &13526996
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
+  MaxSpeed: 2
+  SpeedMultiplier: .25
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

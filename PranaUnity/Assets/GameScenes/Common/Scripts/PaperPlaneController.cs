@@ -9,8 +9,10 @@ public class PaperPlaneController : BaseMonoBehaviour {
 	public float maxSpeed = 3f;
     public float UpVectorRotationSpeed = 1f;
 
+    void Awake() {}
+
 	// Use this for initialization
-	void Start () {
+	void Start() {
 		//rigidbody.AddRelativeForce(Vector3.forward * 1f);
 	}
 

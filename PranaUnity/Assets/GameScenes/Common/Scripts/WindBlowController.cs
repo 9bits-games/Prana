@@ -2,57 +2,67 @@
 using System.Collections;
 
 public class WindBlowController : BaseMonoBehaviour {
+    public delegate void DestroyDelegate();
+    public event DestroyDelegate OnDestroyEvent;
+
     public Transform WindMark;
 
     public float Radius = 1f;
     public int MarkCount = 5;
     public float LifeTime = 2f;
+    public float MaxSpeed = 2f;
+    public float SpeedMultiplier = 0.25f;
 
-    private float timeLiving;
-    private Transform[] windMarks;
-    private float baseOpacity; 
+    private float TimeLiving;
+    private Transform[] WindMarks;
+    private float BaseOpacity;
+
+
+    public void addVelocity(Vector3 velocity) {
+        rigidbody.velocity = Vector3.ClampMagnitude(rigidbody.velocity + velocity * SpeedMultiplier, MaxSpeed);
+    }
 
     void Awake() {
-        windMarks = new Transform[MarkCount];
+        WindMarks = new Transform[MarkCount];
 
         for (int i = 0; i < MarkCount; i++) {
-            windMarks[i] = placeWindMark();
+            WindMarks[i] = PlaceWindMark();
         }
     }
 
     void Start() {
-        timeLiving = 0f;
-        baseOpacity = windMarks[0].renderer.material.GetColor("_TintColor").a;
+        TimeLiving = 0f;
+        BaseOpacity = WindMarks[0].renderer.material.GetColor("_TintColor").a;
     }
 
     void Update() {
-        timeLiving += Time.deltaTime;
+        TimeLiving += Time.deltaTime;
 
         float fadeTime = 0.5f * LifeTime;
 
-        if (timeLiving < fadeTime) {
-            setOpacity(Mathf.InverseLerp(0f, fadeTime, timeLiving));
-        } else if (timeLiving > LifeTime - fadeTime) {
-            setOpacity(1f - Mathf.InverseLerp(LifeTime - fadeTime, LifeTime, timeLiving));
+        if (TimeLiving < fadeTime) {
+            SetOpacity(Mathf.InverseLerp(0f, fadeTime, TimeLiving));
+        } else if (TimeLiving > LifeTime - fadeTime) {
+            SetOpacity(1f - Mathf.InverseLerp(LifeTime - fadeTime, LifeTime, TimeLiving));
         } 
 
-        if (timeLiving > LifeTime) {
+        if (TimeLiving > LifeTime) {
             Destroy(gameObject);
         }
     }
 
-    void setOpacity(float opacity) {
-        foreach (Transform windMark in windMarks) {
+    void SetOpacity(float opacity) {
+        foreach (Transform windMark in WindMarks) {
             Material material = windMark.renderer.material;
           
             Color color = material.GetColor("_TintColor");
-            color.a = opacity * baseOpacity;
+            color.a = opacity * BaseOpacity;
             material.SetColor("_TintColor", color);
         }
 
     }
 
-    Transform placeWindMark() {
+    Transform PlaceWindMark() {
         Vector3 position = this.transform.position + new Vector3(
             Random.Range(-Radius, Radius),
             Random.Range(-Radius, Radius),
@@ -63,5 +73,10 @@ public class WindBlowController : BaseMonoBehaviour {
         newMark.parent = this.transform;
 
         return newMark;
+    }
+
+    protected void OnDestroy() {
+        if (OnDestroyEvent != null)
+            OnDestroyEvent();
     }
 }
