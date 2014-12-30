@@ -59,8 +59,8 @@ MonoBehaviour:
   Radius: 2
   MarkCount: 5
   LifeTime: 2
-  MaxSpeed: 2
-  SpeedMultiplier: .25
+  MaxSpeed: 6
+  SpeedMultiplier: .0500000007
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
