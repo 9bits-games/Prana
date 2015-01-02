@@ -19,7 +19,7 @@ public class CollectablesManager : BaseMonoBehaviour {
 		}
 	}
 
-	void collectablePicked(GameObject collectable) {
+    void collectablePicked(GameObject collectable, GameObject picker) {
 		collected.Add(collectable.GetComponent<CollectableController>());
 
 		if (collected.Count == collectables.Length) {
