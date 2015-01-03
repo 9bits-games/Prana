@@ -35,6 +35,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &191638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 491638}
+  - 182: {fileID: 18291638}
+  m_Layer: 0
+  m_Name: AtracctionForce
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &479736
 Transform:
   m_ObjectHideFlags: 1
@@ -54,12 +70,25 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.69999981, y: 9.69999981, z: -16.1299992}
   m_LocalScale: {x: .289999992, y: .289999992, z: .289999992}
   m_Children:
   - {fileID: 479736}
+  - {fileID: 491638}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &491638
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 479738}
+  m_RootOrder: 1
 --- !u!23 &2379736
 Renderer:
   m_ObjectHideFlags: 1
@@ -129,6 +158,19 @@ MonoBehaviour:
   speedUpwardForce: .00289999996
   maxSpeed: 3
   UpVectorRotationSpeed: 1
+--- !u!182 &18291638
+WindZone:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191638}
+  m_Enabled: 1
+  m_Mode: 1
+  m_Radius: 3
+  m_WindMain: .5
+  m_WindTurbulence: 0
+  m_WindPulseMagnitude: 0
+  m_WindPulseFrequency: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

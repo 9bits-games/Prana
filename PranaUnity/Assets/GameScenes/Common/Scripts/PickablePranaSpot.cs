@@ -23,7 +23,6 @@ public class PickablePranaSpot : BaseMonoBehaviour {
         int lastIndexToConcat = 0;
         foreach (ParticleSystem particleSystem in ParticleSystems) {
             particleSystem.enableEmission = false;
-            particleSystem.constantForce.relativeForce = particleSystem.constantForce.relativeForce * 0.3f;
 
 //            ParticleSystem.Particle[] particles = new ParticleSystem.Particle[particleSystem.maxParticles];
 //            int count = particleSystem.GetParticles(particles);
@@ -32,6 +31,10 @@ public class PickablePranaSpot : BaseMonoBehaviour {
 //            }
 //            particleSystem.SetParticles(particles, count);
         }
+    }
+
+    void Update() {
+
     }
 }
 
