@@ -29,6 +29,15 @@ public class Math3d {
 		//set the parent
 		tempChild.parent = tempParent;
 	}
+
+    // Creates a Vector3 with all its components random between 'lowerLimits' and 'upperLimits'.
+    public static Vector3 RandomVector3(float lowerLimits, float upperLimits) {
+        return new Vector3(
+            UnityEngine.Random.Range(lowerLimits, upperLimits),
+            UnityEngine.Random.Range(lowerLimits, upperLimits),
+            UnityEngine.Random.Range(lowerLimits, upperLimits)
+        );
+    }
  
  
 	//increase or decrease the length of vector by size

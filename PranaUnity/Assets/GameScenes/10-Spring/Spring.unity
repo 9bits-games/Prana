@@ -246,6 +246,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5a1b891f4b844cc913ca9a6c0ead05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticlesLifetimeAfterPicked: 1
+  TintTrailsCount: 5
+  TintTrailRandomRadius: 3
+  TintTrail: {fileID: 106616, guid: 4cc60b0a2d7cd48ac97a4f2fe8a50d06, type: 2}
+  TintParticles: {fileID: 176932, guid: b0137f6d9a0ed47beb6d292657577aa7, type: 2}
+  TintColor: {r: .740712106, g: 0, b: .852941155, a: 1}
 --- !u!1 &21380175
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +297,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5a1b891f4b844cc913ca9a6c0ead05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticlesLifetimeAfterPicked: 1
+  TintTrailsCount: 5
+  TintTrailRandomRadius: 3
+  TintTrail: {fileID: 106616, guid: 4cc60b0a2d7cd48ac97a4f2fe8a50d06, type: 2}
+  TintParticles: {fileID: 176932, guid: b0137f6d9a0ed47beb6d292657577aa7, type: 2}
+  TintColor: {r: .324309766, g: .134083062, b: .911764681, a: 1}
 --- !u!114 &21380178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2627,6 +2639,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 377156187}
   - 108: {fileID: 377156188}
+  - 95: {fileID: 377156189}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -2682,6 +2695,22 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!95 &377156189
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9506210, guid: 17b5764fcab0042178f653d78700aff6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1090390729}
+  m_GameObject: {fileID: 377156186}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a5da8119a7544c8ea9f7a2203a91c13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &379651001
 GameObject:
   m_ObjectHideFlags: 0
@@ -7653,6 +7682,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 786157809}
   - 108: {fileID: 786157810}
+  - 95: {fileID: 786157811}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -7708,6 +7738,22 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!95 &786157811
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9580036, guid: a4696b69101944e62b7884dde5a39ebb,
+    type: 2}
+  m_PrefabInternal: {fileID: 556306341}
+  m_GameObject: {fileID: 786157808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a5da8119a7544c8ea9f7a2203a91c13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &808619428
 GameObject:
   m_ObjectHideFlags: 0
@@ -9125,6 +9171,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 910790748}
   - 108: {fileID: 910790749}
+  - 95: {fileID: 910790750}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -9180,6 +9227,22 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!95 &910790750
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9549640, guid: 2154f0baae28c477ba8e222dc6386a14,
+    type: 2}
+  m_PrefabInternal: {fileID: 607030561}
+  m_GameObject: {fileID: 910790747}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a5da8119a7544c8ea9f7a2203a91c13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &929635409
 GameObject:
   m_ObjectHideFlags: 0
@@ -13093,6 +13156,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1198832699}
   - 108: {fileID: 1198832700}
+  - 95: {fileID: 1198832701}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -13148,6 +13212,22 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!95 &1198832701
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9506384, guid: 81834516ac4104110a66b62f3751b528,
+    type: 2}
+  m_PrefabInternal: {fileID: 532572801}
+  m_GameObject: {fileID: 1198832698}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a5da8119a7544c8ea9f7a2203a91c13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1203658898
 GameObject:
   m_ObjectHideFlags: 0
@@ -13423,6 +13503,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5a1b891f4b844cc913ca9a6c0ead05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticlesLifetimeAfterPicked: 1
+  TintTrailsCount: 5
+  TintTrailRandomRadius: 3
+  TintTrail: {fileID: 106616, guid: 4cc60b0a2d7cd48ac97a4f2fe8a50d06, type: 2}
+  TintParticles: {fileID: 176932, guid: b0137f6d9a0ed47beb6d292657577aa7, type: 2}
+  TintColor: {r: .933823526, g: .764077485, b: .0755298585, a: 1}
 --- !u!114 &1242984129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21241,6 +21327,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5a1b891f4b844cc913ca9a6c0ead05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticlesLifetimeAfterPicked: 1
+  TintTrailsCount: 5
+  TintTrailRandomRadius: 3
+  TintTrail: {fileID: 106616, guid: 4cc60b0a2d7cd48ac97a4f2fe8a50d06, type: 2}
+  TintParticles: {fileID: 176932, guid: b0137f6d9a0ed47beb6d292657577aa7, type: 2}
+  TintColor: {r: .153181195, g: .904411793, b: .126351655, a: 1}
 --- !u!114 &2011186402
 MonoBehaviour:
   m_ObjectHideFlags: 0

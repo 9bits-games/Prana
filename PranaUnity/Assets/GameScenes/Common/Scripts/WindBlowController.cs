@@ -63,11 +63,7 @@ public class WindBlowController : BaseMonoBehaviour {
     }
 
     Transform PlaceWindMark() {
-        Vector3 position = this.transform.position + new Vector3(
-            Random.Range(-Radius, Radius),
-            Random.Range(-Radius, Radius),
-            Random.Range(-Radius, Radius)
-        );
+        Vector3 position = this.transform.position + Math3d.RandomVector3(-Radius, Radius);
 
         Transform newMark = Instantiate(WindMark, position, Quaternion.identity) as Transform;
         newMark.parent = this.transform;

@@ -27,6 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 412410}
   - 108: {fileID: 10812408}
+  - 95: {fileID: 9580036}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -119,6 +120,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 412408}
   m_RootOrder: 0
+--- !u!95 &9580036
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112410}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a5da8119a7544c8ea9f7a2203a91c13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &10812408
 Light:
   m_ObjectHideFlags: 1
@@ -165,6 +181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5a1b891f4b844cc913ca9a6c0ead05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticlesLifetimeAfterPicked: 1
+  TintTrailsCount: 5
+  TintTrailRandomRadius: 3
+  TintTrail: {fileID: 106616, guid: 4cc60b0a2d7cd48ac97a4f2fe8a50d06, type: 2}
+  TintParticles: {fileID: 176932, guid: b0137f6d9a0ed47beb6d292657577aa7, type: 2}
+  TintColor: {r: .740712106, g: 0, b: .852941155, a: 1}
 --- !u!114 &11412410
 MonoBehaviour:
   m_ObjectHideFlags: 1
